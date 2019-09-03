@@ -287,7 +287,7 @@ ImageGroup.actions = {
   toggleCloseAnimate: 'TOGGLE_CLOSE_ANIMATE',
 }
 
-export function Image({ src, alt, style, ...props }: ImageProps) {
+export function Image({ src, alt, style, imgText, ...props }: ImageProps) {
   const {
     onClick,
     isFocused,
@@ -343,9 +343,11 @@ export function Image({ src, alt, style, ...props }: ImageProps) {
       >
         <div className="fullscreen-image">
           <img src={src} alt={alt} style={style} />
+          <div className="bottom-left">{imgText}</div>
         </div>
         <div ref={scalingImage} className="fullscreen-image">
           <img src={src} alt={alt} style={style} />
+          <div className="bottom-left">{imgText}</div>
         </div>
       </button>
     </div>
