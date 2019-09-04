@@ -34,17 +34,6 @@ div.fullscreen-container {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	text-align: center; /* nuovo */
-	color: white; /* nuovo */
-}
-
-/* Bottom left text */
-div.bottom-left {
-	position: absolute;
-	bottom: 8px;
-	left: 16px;
-	color: white;
-	font-size: 25px;
 }
 
 button.fullscreen-toggle {
@@ -105,4 +94,14 @@ div.fullscreen-image {
 	left: inherit;
 	right: inherit;
 	bottom: inherit;
+}
+
+span.caption {
+	position: relative;
+	top: 95%;
+}
+
+span.caption--expanded {
+	position: relative;
+	left: 95%;
 }

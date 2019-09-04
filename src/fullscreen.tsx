@@ -341,15 +341,14 @@ export function Image({ src, alt, style, imgText, ...props }: ImageProps) {
         onClick={onClick}
         tabIndex={isFocused || !isImageGroupExpanded ? 0 : -1}
       >
-        <div className="fullscreen-image">
+        <div className="fullscreen-image">  
           <img src={src} alt={alt} style={style} />
-          <div className="bottom-left">{imgText}</div>
         </div>
         <div ref={scalingImage} className="fullscreen-image">
           <img src={src} alt={alt} style={style} />
-          <div className="bottom-left">{imgText}</div>
         </div>
       </button>
+      <span className="caption">{imgText}</span>
     </div>
   )
 }
